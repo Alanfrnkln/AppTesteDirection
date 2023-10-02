@@ -1,0 +1,11 @@
+﻿@model ContatoModel
+
+@{
+    ViewData["Title"] = "Excluir Contato";
+}
+
+<div class="text-center">
+    <h3>Tem certeza de que deseja excluir o contato (@Model.Nome) ?</h3>
+    <a type="submit" class="btn btn-danger" asp-controller="Contato" asp-route-id="@Model.Id" asp-action="Deletar">Excluir</a>
+    <a type="submit" class="btn btn-primary" asp-controller="Contato" asp-action="Index">Voltar</a>
+</div>
